@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:paddingStart="12dp">
+
+    <LinearLayout
+        android:id="@+id/register_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@drawable/background_style"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_account"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium"
+            android:padding="3dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:hint="@string/enter_name1"
+            android:drawableStart="@drawable/person_name"
+            android:drawablePadding="12dp"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/box_backgroud"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/gender"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_gender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/male"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/female"
+                    android:layout_weight="1"
+                    android:textSize="18sp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/select_location"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="3dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:layout_marginEnd="30dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_style"
+                >
+
+                <Spinner
+                    android:id="@+id/location_spinner"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:hint="@string/mobile_no"
+            android:drawableStart="@drawable/phone_number"
+            android:drawablePadding="12dp"
+            android:inputType="phone"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/box_backgroud"
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:hint="@string/enter_email"
+            android:drawableStart="@drawable/baseline_email_1"
+            android:drawablePadding="12dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/box_backgroud"
+            />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:hint="@string/enter_password"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/box_backgroud"
+            />
+
+        <EditText
+            android:id="@+id/et_bio"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:hint="@string/add_bio"
+            android:drawableStart="@drawable/edit_bio"
+            android:drawablePadding="12dp"
+            android:inputType="text"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/box_backgroud"
+            />
+
+        <CheckBox
+            android:id="@+id/condition_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/i_have_read_understood_and_accepted_the_conditions"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:letterSpacing=".04"
+            android:layout_marginBottom="12dp"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
+            android:text="@string/submit"
+            android:textSize="22sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/information_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/background_style"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_information"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="arial"
+            android:textFontWeight="500"
+            android:letterSpacing=".05"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_register_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
+            android:text="Register again !"
+            android:textSize="22sp"
+            android:layout_marginBottom="16dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

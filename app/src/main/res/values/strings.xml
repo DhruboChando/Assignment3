@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+    <string name="enter_name">Enter name</string>
+    <string name="e_mail">E - mail</string>
+    <string name="enter_email">Enter email</string>
+    <string name="register">Register</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="submit">Submit</string>
+    <string name="mobile_no">Mobile no</string>
+    <string name="enter_name1">Enter name</string>
+    <string name="add_bio">Add Bio</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_location">Select Location</string>
+    <string name="enter_password">Enter password</string>
+    <string name="user_information">User Information</string>
+    <string name="i_have_read_understood_and_accepted_the_conditions">I have read, understood and accepted the conditions .</string>
+</resources>
