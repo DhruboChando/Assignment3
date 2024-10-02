@@ -211,6 +211,20 @@ public class MainActivity extends AppCompatActivity {
                 // Hide the information layout and show the registration layout
                 information.setVisibility(View.GONE);
                 register.setVisibility(View.VISIBLE);
+
+//                // Reset all input fields
+//                name.setText("");
+//                email.setText("");
+//                mobile.setText("");
+//                bio.setText("");
+//                pass.setText("");
+//
+//                // Clear gender selection and conditions
+//                gender.clearCheck();
+//                conditions.setChecked(false);
+//
+//                // Reset the location spinner to the default value
+//                location.setSelection(0);
             }
         });
 
